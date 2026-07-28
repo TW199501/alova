@@ -1,0 +1,319 @@
+# Instincts generated from https://github.com/TW199501/alova
+# Generated: 2026-07-28T05:53:33.586Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: alova-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/TW199501/alova
+---
+
+# Alova Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore(deps): bump trix from 2.1.14 to 2.1.18
+
+---
+id: alova-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/TW199501/alova
+---
+
+# Alova Commit Length
+
+## Action
+
+Keep commit messages concise (~44 characters)
+
+## Evidence
+
+- Average commit message length: 44 chars
+- Based on 1 commits
+
+---
+id: alova-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/TW199501/alova
+---
+
+# Alova Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: alova-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/TW199501/alova
+---
+
+# Alova Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: alova-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/TW199501/alova
+---
+
+# Alova Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: alova-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/TW199501/alova
+---
+
+# Alova Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: alova-instinct-file-naming-camelCase
+trigger: "When creating a new file in the codebase"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct File Naming CamelCase
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: alova-instinct-function-naming-camelCase
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Function Naming CamelCase
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: alova-instinct-class-naming-pascalCase
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Class Naming PascalCase
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: alova-instinct-constant-naming-screamingSnakeCase
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Constant Naming ScreamingSnakeCase
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: alova-instinct-import-style-relative
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Import Style Relative
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: alova-instinct-export-style-named
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Export Style Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: alova-instinct-commit-prefix-chore
+trigger: "When making dependency updates or maintenance changes"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Commit Prefix Chore
+
+## Action
+
+Prefix the commit message with 'chore'
+
+## Evidence
+
+- Seen in commit: chore(deps): bump trix from 2.1.14 to 2.1.18
+- Pattern in commits.prefixes
+
+---
+id: alova-instinct-commit-format-conventional
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Commit Format Conventional
+
+## Action
+
+Follow the Conventional Commits format: <type>(<scope>): <description>
+
+## Evidence
+
+- Pattern in commits.type
+- Seen in commit: chore(deps): bump trix from 2.1.14 to 2.1.18
+
+---
+id: alova-instinct-test-location-separate
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Test Location Separate
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.testLocation
+
+---
+id: alova-instinct-examples-folder-usage
+trigger: "When adding usage examples or demo code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: TW199501/alova
+---
+
+# Alova Instinct Examples Folder Usage
+
+## Action
+
+Place them in the 'examples' folder
+
+## Evidence
+
+- Pattern in architecture.commonFolders
+
